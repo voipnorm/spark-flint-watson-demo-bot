@@ -7,6 +7,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var ibmapi = require('./myutils/ibmapi');
+var config = config('../config/config');
 var app = express();
 
 app.use(bodyParser.json());
@@ -14,8 +15,8 @@ app.use(bodyParser.json());
 
 // flint options
 var config = {
-  webhookUrl: 'https://tcdisruptsf-voipnorm.c9users.io/flint',
-  token: 'YWNiZGJiMDMtYjBlYS00ZWQzLTkwMWItMjQ3ZmUzMTNlZWViNGJiNzQ5ZDktOTM3',
+  webhookUrl: config.cloud9URL+'/flint',
+  token: config.botToken,
   port: 8080,
   removeWebhooksOnStart: false,
   maxConcurrent: 5,

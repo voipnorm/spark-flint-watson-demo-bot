@@ -23,7 +23,7 @@ exports.watsonConversation = function(inputMessage, callback){
   input: {
     "text": inputMessage
   },
-  workspace_id: 'eebd97b1-8f9e-4719-9d4f-df04df690c2a'
+  workspace_id: config.watsonWorkSpaceID
  }, function(err, response) {
      if (err) {
        console.error(err);
