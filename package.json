@@ -1,7 +1,7 @@
 {
-  "name": "chat-example",
+  "name": "tcdisruptsf",
   "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
+  "description": "TCDisrupt Spark example bot integrated with IBM Watson",
   "main": "server.js",
   "repository": "",
   "author": "Mostafa Eweda <mo.eweda@gmail.com>",
