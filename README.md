@@ -9,7 +9,8 @@
 ## IBM Watson Conversation API's
 
 * IBM Watson Conversation API provides a natural language interface to help automate interactions for chatbots. 
-* IBM provides a web interface to help create Intents, Entities and Dialogs
+* IBM provides a web interface to help create Intents, Entities and Dialogs along with an extensive nodejs module which is used in this skeleton.
+* API calls are made to the Watson service via the Nodejs Watson module.
 * [Great demo from IBM Watson Team](https://www.youtube.com/watch?v=MTCc4d-RXP0)
 
 ## Cloud 9 hosting by Amazon
@@ -17,6 +18,7 @@
 * Cloud 9 is a cloud IDE/hosting platform
 * [Cloud 9 hosting documents](https://docs.c9.io/docs)
 * [Cloud 9 Introduction Video](https://www.youtube.com/watch?v=hqzOwM8aXdI)
+* Ensure to upgrade the default version of Express if using Cloud 9 per the dependencies below which is also in the package.json file.
 
 
 ## Dependencies -
