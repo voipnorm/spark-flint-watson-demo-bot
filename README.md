@@ -1,4 +1,4 @@
-# TechCrunch Disrupt Spark demo bot
+# Spark Demo Bot Skeleton
 
 ## Required accounts
 * Spark user/developer account
