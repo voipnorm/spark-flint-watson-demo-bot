@@ -9,7 +9,7 @@
     *"path": "^0.12.7",
     *"watson-developer-cloud": "^2.2.0"
 
-Use -
+##Use -
 
 Easy to setup and use Spark bot skeleton based on Flint bot Framework by Nick Marus with integration to IBM Watson Conversation API.
 
@@ -18,7 +18,7 @@ Easy to setup and use Spark bot skeleton based on Flint bot Framework by Nick Ma
 
 **DEBUG=flint,bot,sparky node server.js**
 
-Configuration -
+##Configuration -
     *1.Clone repository by creating a new workspace on cloud9 using clone option
     *2.Create Spark Bot account at developer.ciscospark.com
     *3.Setup IBM Watson conversation API per IBM instructions
