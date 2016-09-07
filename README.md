@@ -4,6 +4,20 @@
 * Spark user/developer account
 * Spark bot account
 * IBM Watson credentials
+* Cloud 9 hosting (optional)
+
+## IBM Watson Conversation API's
+
+* IBM Watson Conversation API provides a natural language interface to help automate interactions for chatbots. 
+* IBM provides a web interface to help create Intents, Entities and Dialogs
+* [Great demo from IBM Watson Team](https://www.youtube.com/watch?v=MTCc4d-RXP0)
+
+## Cloud 9 hosting by Amazon
+
+* Cloud 9 is a cloud IDE/hosting platform
+* [Cloud 9 hosting documents](https://docs.c9.io/docs)
+* [Cloud 9 Introduction Video](https://www.youtube.com/watch?v=hqzOwM8aXdI)
+
 
 ## Dependencies -
 * "async": "~0.2.8",
