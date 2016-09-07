@@ -1,9 +1,9 @@
 # TechCrunch Disrupt Spark demo bot
 
 ## Required accounts
-    * Spark user/developer account
-    * Spark bot account
-    * IBM Watson credentials
+* Spark user/developer account
+* Spark bot account
+* IBM Watson credentials
 
 ## Dependencies -
     * "async": "~0.2.8",
