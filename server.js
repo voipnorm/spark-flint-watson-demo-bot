@@ -1,6 +1,8 @@
 
-//https://github.com/nmarus/flint
+//Flint framework reference - https://github.com/nmarus/flint
 //Make sure to upgrade express if using cloud 9
+//Running the project with full debug console logging: DEBUG=flint,bot,sparky node server.js
+//Ensure to rename config.example to config.js with applicable keys, usernames and ID's
 var Flint = require('node-flint');
 var webhook = require('node-flint/webhook');
 var express = require('express');
@@ -41,7 +43,7 @@ flint.on('initialized', function() {
   flint.debug('initialized %s rooms', flint.bots.length);
 });
 
-//set translation bot per room settings
+//set bot to listen to incoming webhooks
 flint.hears(/(^| )TCDisruptSF|.*( |.|$)/i, function(bot, trigger) {
   var text = trigger.text;
   var request = text.replace("TCDisruptSF ",'');
