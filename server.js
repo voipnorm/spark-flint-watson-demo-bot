@@ -7,7 +7,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var ibmapi = require('./myutils/ibmapi');
-var config = config('../config/config');
+var myconfig = require('./config/config');
 var app = express();
 
 app.use(bodyParser.json());
@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 
 // flint options
 var config = {
-  webhookUrl: config.cloud9URL+'/flint',
-  token: config.botToken,
+  webhookUrl: myconfig.cloud9URL+'/flint',
+  token: myconfig.botToken,
   port: 8080,
   removeWebhooksOnStart: false,
   maxConcurrent: 5,
@@ -42,7 +42,7 @@ flint.on('initialized', function() {
 });
 
 //set translation bot per room settings
-flint.hears(/(^| )TCDisruptSF( |.|$)/i, function(bot, trigger) {
+flint.hears(/(^| )TCDisruptSF|.*( |.|$)/i, function(bot, trigger) {
   var text = trigger.text;
   var request = text.replace("TCDisruptSF ",'');
   ibmapi.watsonConversation(request, function(response){
