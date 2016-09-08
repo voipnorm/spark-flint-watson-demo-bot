@@ -34,6 +34,10 @@ flint.hears('/hello', function(bot, trigger) {
   bot.say('Hello %s!', trigger.personDisplayName);
 });
 
+flint.hears('/roomid', function(bot, trigger) {
+  bot.say('This is your room ID', trigger.roomId);
+});
+
 // add flint event listeners
 flint.on('message', function(bot, trigger, id) {
   flint.debug('"%s" said "%s" in room "%s"', trigger.personEmail, trigger.text, trigger.roomTitle);
@@ -47,9 +51,13 @@ flint.on('initialized', function() {
 flint.hears(/(^| )TCDisruptSF|.*( |.|$)/i, function(bot, trigger) {
   var text = trigger.text;
   var request = text.replace("TCDisruptSF ",'');
+  if(request.match(/(^| )\/hello|\/roomid( |.|$)/i)){
+    flint.debug('IBM Watson call cancelled: Translate command')
+  }else{
   ibmapi.watsonConversation(request, function(response){
     bot.say(response);
   })
+  }
 });
 
 // define express path for incoming webhooks
