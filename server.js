@@ -55,9 +55,9 @@ flint.on('spawn', function(bot) {
   
   //presents different messages based on room or 1:1 
   if(bot.isGroup){
-     bot.say("Hi! To get started just type @TCDisrupt hello");
+     bot.say("Hi! To get started just type @TCDisrupt hello.");
   }else{
-    bot.say("Hi!. To get started just type hello");
+    bot.say("Hi! To get started just type hello.");
   }; 
   bot.repeat;
 });
