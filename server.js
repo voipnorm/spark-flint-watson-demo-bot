@@ -52,7 +52,7 @@ flint.hears(/(^| )TCDisruptSF|.*( |.|$)/i, function(bot, trigger) {
   var text = trigger.text;
   var request = text.replace("TCDisruptSF ",'');
   if(request.match(/(^| )\/hello|\/roomid( |.|$)/i)){
-    flint.debug('IBM Watson call cancelled: Translate command')
+    flint.debug('IBM Watson call cancelled: slash command used')
   }else{
   ibmapi.watsonConversation(request, function(response){
     bot.say(response);
